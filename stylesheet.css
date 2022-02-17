@@ -1,0 +1,190 @@
+@import url(designSystem.css);
+@import url(blogStylesheet.css);
+
+/* responsive mobile */
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-areas:
+
+    "hd hd hd hd  hd hd hd hd  hd hd hd hd"
+    ". . . nav  nav nav nav nav  nav . . ."
+    ". . ar ar  ar ar ar ar  ar ar . ."
+    "con con con con  con con con con  con con con con"
+    "ft ft ft ft  ft ft ft ft  ft ft ft ft"
+}
+
+/* Heading */
+
+.div1 {
+    grid-area: hd; 
+    background-color: #3CB2D0;
+    display: grid;
+    justify-items: center;
+    height: 10vh;
+
+}
+
+/* Navigation */
+
+.div2 {
+    grid-area: nav;
+    background-color: #3CB2D0;
+    color:#fdefdb;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 7vh;
+}
+
+/* Latest Article Snippet Card */
+
+.div3 {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: ar;
+    border-radius: 0.3em;
+    box-shadow: 1px 1px 1px #272b2a3f;
+    background: url(koiNobori.jpg);
+}
+
+#latestArticle {
+    border: 1px solid red;
+}
+
+#latestSnippet {
+    text-align: left;
+    font-size: 0.9em;
+    border: 1px solid red;
+}
+
+#foodPhoto {
+    height: 200px;
+    width: 300px;
+    border: 1px solid red;
+}
+
+/* Content */
+
+.div4 {
+    grid-area: con;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-auto-rows: minmax(100px auto);
+}
+
+#innerHead {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#paraHead {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+
+.div5 {
+    grid-area: ft;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* responsive tablet */
+
+@media (min-width: 768px) {
+    .wrapper {
+        height: 90vh;
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat (12, 1fr);
+        grid-template-areas:
+    
+        "hd hd hd hd  hd hd hd hd  hd hd hd hd"
+        "nav nav nav nav  sd sd sd sd  sd sd sd sd"
+        "nav nav nav nav  sd sd sd sd  sd sd sd sd"
+        "con con con con  sd sd sd sd  sd sd sd sd"
+        "con con con con  ft ft ft ft  ft ft ft ft"
+    }
+    
+    .div1 {
+        grid-area: hd;
+        border: 1px solid red;
+    }
+    
+    .div2 {
+        grid-area: nav;
+        border: 1px solid red;
+    }
+    
+    .div3 {
+        grid-area: sd;
+        border: 1px solid red;
+    }
+    
+    .div4 {
+        grid-area: con;
+        border: 1px solid red;
+    }
+    
+    .div5 {
+        grid-area: ft;
+        border: 1px solid red;
+    }
+
+}
+
+/* responsive desktop */
+
+@media (min-width: 1080px) {
+    .wrapper {
+        height: 90vh;
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat (12, 1fr);
+        grid-template-areas:
+    
+        "hd hd hd hd  hd hd hd hd  hd hd hd hd"
+        "nav nav con con  con con con con  con con sd sd"
+        "nav nav con con  con con con con  con con sd sd"
+        "nav nav con con  con con con con  con con sd sd"
+        "ft ft ft ft  ft ft ft ft  ft ft ft ft"
+    }
+    
+    .div1 {
+        grid-area: hd;
+        border: 1px solid red;
+    }
+    
+    .div2 {
+        grid-area: nav;
+        border: 1px solid red;
+    }
+    
+    .div3 {
+        grid-area: con;
+        border: 1px solid red;
+    }
+    
+    .div4 {
+        grid-area: sd;
+        border: 1px solid red;
+    }
+    
+    .div5 {
+        grid-area: ft;
+        border: 1px solid red;
+    }
+}
