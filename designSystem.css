@@ -3,22 +3,27 @@
 body {
     background-color: #3CB2D0;
     color: #fdefdb;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-family: 'Zen Kaku Gothic Antique', Verdana, Tahoma, sans-serif;
     padding: 5px;
 }
 
 h1 {
+    font-family: 'Shizuru', 'Zen Kaku Gothic Antique', Georgia, 'Times New Roman', Times, serif;
     font-size: 3em;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 h2 {
+    font-family: 'Raleway', Verdana, Tahoma, sans-serif;
     font-size: 2.4em;
 }
 
 h3 {
+    font-family: 'Raleway', Verdana, Tahoma, sans-serif;
     font-size: 1.3em;
+    font-style: italic;
+    padding-top: 0.5em;
 }
 
 hr {
@@ -28,7 +33,6 @@ hr {
 }
 
 p {
-    padding: 5px;
     text-align: justify;
 }
 

@@ -1,5 +1,4 @@
 @import url(designSystem.css);
-@import url(blogPieceStyles.css);
 
 /* responsive mobile */
 
@@ -143,252 +142,89 @@
 
 @media(min-width: 768px) {
 
-.wrapper {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat (12, 1fr);
-    grid-template-areas:
-
-    "hd hd hd hd  hd hd hd hd  hd hd hd hd"
-    "nav nav nav nav  nav nav nav nav  nav nav nav nav"
-    ". ar ar .  con con con con  con con con con"
-    ". . . .  con con con con  con con con con"
-    ". sup sup .  con con con con  con con con con"
-    "ft ft ft ft  ft ft ft ft  ft ft ft ft"
-}
-
-
-/* Heading */
-
-.div1 {
-    grid-area: hd; 
-    background-color: #3CB2D0;
-    display: grid;
-    justify-items: center;
-    height: 10vh;
-}
-
-#heading {
-    font-size: 3.5em;
-}
-
-/* Navigation */
-
-.div2 {
-    grid-area: nav;
-    background-color: #3CB2D0;
-    color:#fdefdb;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 1.2em;
-    height: 7vh;
-}
-
-/* Latest Article Snippet Card */
-
-.div3 {
-    grid-area: ar;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 0.3em;
-    margin-top: 30px;
-    margin-left: 10%;
-    box-shadow: 1px 1px 1px #272b2a3f;
-    background: url(koiNobori.jpg);
-}
-
-#latestArticle {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-#latestSnippet {
-    text-align: left;
-    margin-top: 0px;
-    font-size: 0.9em;
-}
-
-#foodPhoto {
-    margin-top: 3%;
-    height: 200px;
-    width: 300px;
-    object-fit: cover;
-}
-
-#button {
-    margin-top: 5px;
-    margin-bottom: 15px;
-}
-
-/* Content */
-
-.div4 {
-    grid-area: con;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 10%;
-    grid-auto-rows: minmax(100px auto);
-}
-
-#innerHead {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-#paraHead {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-/* Sign Up to Newsletter */
-
-.signUp {
-    grid-area: sup;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20%;
-    margin-left: 10%;
-    grid-auto-rows: minmax(100px auto);
-}
-
-#image1 {
-    height: 200px;
-    width: 300px;
-    padding-top: 0px;
-    margin-top: 30px;
-    margin-bottom: 0px;
-}
-
-#button1 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-shadow: 1px 1px 1px #272b2a3f;
-}
-
-/* Footer */
-
-.div5 {
-    grid-area: ft;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url("koiNobori.jpg");
-}
-}
-
-/* Responsive Desktop */
-
-@media(min-width: 1080px) {
-
     .wrapper {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat (12, 1fr);
         grid-template-areas:
     
         "hd hd hd hd  hd hd hd hd  hd hd hd hd"
         "nav nav nav nav  nav nav nav nav  nav nav nav nav"
-        ". ar . .  con con con con  con con con con"
-        "sup sup sup sup  con con con con  con con con con"
-        "sup sup sup sup  con con con con  con con con con"
+        ". ar ar .  con con con con  con con con con"
+        ". . . .  con con con con  con con con con"
+        ". sup sup .  con con con con  con con con con"
         "ft ft ft ft  ft ft ft ft  ft ft ft ft"
     }
     
     
     /* Heading */
     
-    .div1 {
-        grid-area: hd; 
-        background-color: #3CB2D0;
-        display: grid;
-        justify-items: center;
-        height: 10vh;
-    
+    #heading {
+        font-size: 3.5em;
     }
     
     /* Navigation */
     
     .div2 {
-        grid-area: nav;
-        background-color: #3CB2D0;
-        color:#fdefdb;
-        display: flex;
-        flex-direction: row;
         justify-content: center;
-        height: 7vh;
+        font-size: 1.2em;
+    }
+    
+    /* Latest Article Snippet Card */
+    
+    .div3 {
+        margin-top: 30px;
+        margin-left: 10%;
+    }
+    
+    /* Content */
+    
+    .div4 {
+        margin-right: 10%;
+    }
+    
+    /* Sign Up to Newsletter */
+    
+    .signUp {
+        padding-bottom: 20%;
+        margin-left: 10%;
+    }
+}
+
+/* Responsive Desktop */
+
+@media(min-width: 1080px) {
+    
+    /* Navigation */
+    
+    .div2 {
         font-size: 1.3em;
     }
     
     /* Latest Article Snippet Card */
     
     .div3 {
-        grid-area: ar;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-left: 30%;
         margin-top: 20%;
-        border-radius: 0.3em;
-        box-shadow: 1px 1px 1px #272b2a3f;
-        background: url(koiNobori.jpg);
+        margin-left: 30%;
     }
     
     #latestArticle {
-        text-align: center;
-        margin-top: 5px;
-        margin-bottom: 5px;
         font-size: 1.5em;;
     }
     
     #latestSnippet {
-        text-align: left;
-        margin-top: 0px;
         font-size: 1.1em;
-    }
-    
-    #foodPhoto {
-        margin-top: 3%;
-        height: 200px;
-        width: 300px;
-    }
-    
-    #button {
-        margin-top: 5px;
-        margin-bottom: 15px;
     }
     
     /* Content */
     
     .div4 {
-        grid-area: con;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin-top: 10%;
         margin-right: 20%;
-        grid-auto-rows: minmax(100px auto);
     }
     
     #innerHead {
-        margin-top: 5px;
-        margin-bottom: 5px;
         font-size: 3em;
     }
     
     #paraHead {
-        margin-top: 5px;
-        margin-bottom: 5px;
         font-size: 1.5em;
     }
 
@@ -403,38 +239,14 @@
 /* Sign Up to Newsletter */
 
 .signUp {
-    grid-area: sup;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-bottom: 20%;
     margin-left: 20%;
-    grid-auto-rows: minmax(100px auto);
-}
-
-#image1 {
-    height: 200px;
-    width: 300px;
-    padding-top: 0px;
-    margin-top: 30px;
-    margin-bottom: 0px;
-}
-
-#button1 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-shadow: 1px 1px 1px #272b2a3f;
-}
-    
-    /* Footer */
-    
-    .div5 {
-        grid-area: ft;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: url("koiNobori.jpg");
     }
+}
+/* tiny screen width */
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
     }
+}
