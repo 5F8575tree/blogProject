@@ -17,26 +17,6 @@
     "ft ft ft ft  ft ft ft ft  ft ft ft ft"
 }
 
-/* Heading */
-.div1 {
-    grid-area: hd;
-    background-color: #3CB2D0;
-    display: grid;
-    justify-items: center;
-    height: 10vh; /* Imagining the heading almost as logo itself, so decided to keep the height uniform and alter font size */
-}
-
-/* Navigation */
-.div2 {
-    grid-area: nav;
-    background-color: #3CB2D0;
-    color:#fdefdb;
-    display: flex; /* Same setup as styles.css, so this should have been combined into one code */
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 7vh;
-}
-
 /* Author Intro Card */
 .div3 {
     grid-area: cd;
@@ -59,92 +39,22 @@
 
 #auth-bio {
     text-align: left;
-    margin-top: 0; /* redundant? */
     padding-left: 20px;
     font-size: 0.9em;
 }
 
 #auth-title {
-    margin-top: 0; /* redundant? */
-    padding-top: 0; /* redundant? */
     color: #fbff00cc;
     font-weight: 700;
 }
 
 #avatar {
-    margin-top: 3%; /* Unnecessary as could've been combined with styles.css */
-    height: 200px; /* Unnecessary code */
-    width: 300px; /* Unnecessary code */
+    margin-top: 3%;
 }
 
 /* Content */
-.div4 { /* Unnecessary as could've been combined with styles.css */
-    grid-area: con;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    grid-auto-rows: minmax(100px auto);
-}
-
 #inner-head {
-    color: #fbff00cc; /* This is the only line that would be necessary if I combined with styles.css */
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-#para-head { /* Unnecessary as could've been combined with styles.css */
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-#para-head2 { /* Unnecessary code */
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-#blog-img1 { /* The code for all three blogPhoto id's are the same, so would've been better to combine into class */
-    margin-bottom: 0px; /* Redundant? */
-    height: 80%;
-    width: 80%;
-}
-
-#blog-img2 {
-    margin-bottom: 0px; /* Redundant? */
-    height: 80%;
-    width: 80%;
-}
-
-#blog-img3 {
-    margin-bottom: 0; /* Redundant? */
-    height: 80%;
-    width: 80%;
-}
-
-/* Sign Up to Newsletter */
-.sign-up { /* Unnecessary as could've been combined with styles.css */
-    grid-area: sup;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-auto-rows: minmax(100px auto);
-}
-
-#image1 { /* Unnecessary as could've been combined with styles.css */
-    height: 200px;
-    width: 300px;
-    padding-top: 0;
-    margin-top: 30px; 
-    margin-bottom: 0;
-}
-
-#button1 { /* Unnecessary as could've been combined with styles.css */
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-shadow: 1px 1px 1px #272b2a3f;
+    color: #fbff00cc;
 }
 
 /* Social Media Share Buttons */
@@ -152,28 +62,9 @@
     text-align: center;
 }
 
-#twitter { /* Would've been better to use logo class for the three links? */
+.logo {
     height: 50px;
     width: 50px;
-}
-
-#facebook {
-    height: 50px;
-    width: 50px;
-}
-
-#linkedin {
-    height: 50px;
-    width: 50px;
-}
-
-/* Footer */
-.div5 { /* Unnecessary as could've been combined with styles.css */
-    grid-area: ft;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url(../webpage-master/koiNobori.jpg);
 }
 
 
@@ -264,12 +155,7 @@
     .par {
         font-size: 1.2em;
     }
-       
-    /* Sign Up to Newsletter */
-    .sign-up { /* Unnecessary as could've been combined with styles.css */
-        padding-bottom: 20%;
-        margin-left: 20%;
-    }
+
 }
 
 

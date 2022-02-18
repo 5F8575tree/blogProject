@@ -59,15 +59,12 @@
 
 #latest-snippet {
     text-align: left;
-    margin-top: 0;
     padding-left: 20px;
     font-size: 0.9em;
 }
 
 #food-photo {
     margin-top: 3%;
-    height: 200px; /* Unnecessary code as this is in designSystem */
-    width: 300px; /* Unnecessary code as this is in designSystem */
 }
 
 #button {

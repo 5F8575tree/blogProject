@@ -26,7 +26,7 @@ h3 {
     padding-top: 0.5em;
 }
 
-hr {    /* Used to break up the header and footer from the body content */
+hr { /* Used to break up the header and footer from the body content */
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -75,10 +75,16 @@ a:hover {
     margin: 20px;
 }
 
+.blog-img {
+    height: 80%;
+    width: 80%;
+    border: 2px solid #fbff00cc;
+}
+
 .caption {
     display: flex;  /* flex in order to quickly have items aligned center below the image */
     flex-direction: column;
     align-items: center;
     font-style: italic;
-    font-size: small; /* This is probably NOT a good idea */
+    font-size: small; /* This is probably NOT a good idea - is it better to select a literal? */
 }
