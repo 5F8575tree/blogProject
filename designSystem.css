@@ -1,32 +1,33 @@
-/* Design system */
 
+/* THEME */
 body {
     background-color: #3CB2D0;
     color: #fdefdb;
-    font-family: 'Zen Kaku Gothic Antique', Verdana, Tahoma, sans-serif;
+    font-family: "Zen Kaku Gothic Antique", Verdana, Tahoma, sans-serif;
     padding: 5px;
 }
 
+/* TYPOGRAPHY */
 h1 {
-    font-family: 'Shizuru', 'Zen Kaku Gothic Antique', Georgia, 'Times New Roman', Times, serif;
+    font-family: "Shizuru", "Zen Kaku Gothic Antique", Georgia, "Times New Roman", Times, serif;
     font-size: 3em;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 h2 {
-    font-family: 'Raleway', Verdana, Tahoma, sans-serif;
+    font-family: "Raleway", Verdana, Tahoma, sans-serif;
     font-size: 2.4em;
 }
 
 h3 {
-    font-family: 'Raleway', Verdana, Tahoma, sans-serif;
+    font-family: "Raleway", Verdana, Tahoma, sans-serif;
     font-size: 1.3em;
     font-style: italic;
     padding-top: 0.5em;
 }
 
-hr {
+hr {    /* Used to break up the header and footer from the body content */
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -40,14 +41,15 @@ a {
     padding: 5px;
     text-align: justify;
     color: #fdefdb;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    text-decoration: none;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    text-decoration: none; /* Removing underlined links */
 }
 
 a:hover {
     color: #fbff00cc;
 }
 
+/* BUTTON */
 .button {
     background-color: #fbff00cc;
     color: #222;
@@ -61,11 +63,12 @@ a:hover {
     box-shadow: 1px 1px 1px #272b2a3f;
 }
 
-.button:hover {
+.button:hover { /* Would prefer a transition 'pop', but couldn't get it to work or at least look reasonable */
     background-color: #222;
     color: #fbff00cc;
 }
 
+/* IMAGES */
 .photo {
     height: 200px;
     width: 300px;
@@ -74,9 +77,9 @@ a:hover {
 }
 
 .caption {
-    display: flex;
+    display: flex;  /* flex in order to quickly have items aligned center below the image */
     flex-direction: column;
     align-items: center;
     font-style: italic;
-    font-size: small;
+    font-size: small; /* This is probably NOT a good idea */
 }

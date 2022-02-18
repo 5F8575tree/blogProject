@@ -1,7 +1,6 @@
-@import url("designSystem.css");
+@import url(../designSystem/designSystem.css);
 
 /* responsive mobile */
-
 .wrapper {
     height: 100%;
     width: 100%;
@@ -18,42 +17,38 @@
     "ft ft ft ft  ft ft ft ft  ft ft ft ft"
 }
 
-
 /* Heading */
-
 .div1 {
-    grid-area: hd; 
+    grid-area: hd;
     background-color: #3CB2D0;
     display: grid;
     justify-items: center;
-    height: 10vh;
+    height: 10vh; /* Imagining the heading almost as logo itself, so decided to keep the height uniform and alter font size */
 }
 
 /* Navigation */
-
 .div2 {
     grid-area: nav;
     background-color: #3CB2D0;
     color:#fdefdb;
-    display: flex;
+    display: flex; /* Same setup as styles.css, so this should have been combined into one code */
     flex-direction: row;
     justify-content: space-evenly;
     height: 7vh;
 }
 
 /* Author Intro Card */
-
 .div3 {
     grid-area: cd;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Same setup as styles.css, so this should have been combined into one code */
     justify-content: center;
     border-radius: 0.3em;
     margin-bottom: 5%;
     margin-right: 5%;
     margin-left: 5%;
     box-shadow: 1px 1px 1px #272b2a3f;
-    background: url(koiNobori.jpg);
+    background: url(../entireSite/koiNobori.jpg); 
 }
 
 #authorName {
@@ -64,30 +59,29 @@
 
 #authorBio {
     text-align: left;
-    margin-top: 0px;
+    margin-top: 0; /* redundant? */
     padding-left: 20px;
     font-size: 0.9em;
 }
 
 #authorTitle {
-    margin-top: 0px;
-    padding-top: 0px;
+    margin-top: 0; /* redundant? */
+    padding-top: 0; /* redundant? */
     color: #fbff00cc;
     font-weight: 700;
 }
 
 #avatar {
-    margin-top: 3%;
-    height: 200px;
-    width: 300px;
+    margin-top: 3%; /* Unnecessary as could've been combined with styles.css */
+    height: 200px; /* Unnecessary code */
+    width: 300px; /* Unnecessary code */
 }
 
 /* Content */
-
-.div4 {
+.div4 { /* Unnecessary as could've been combined with styles.css */
     grid-area: con;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     margin-left: 5%;
     margin-right: 5%;
@@ -95,42 +89,41 @@
 }
 
 #innerHead {
-    color: #fbff00cc;
+    color: #fbff00cc; /* This is the only line that would be necessary if I combined with styles.css */
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-#paraHead {
+#paraHead { /* Unnecessary as could've been combined with styles.css */
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-#paraHead2 {
+#paraHead2 { /* Unnecessary code */
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-#blogPhoto1 {
-    margin-bottom: 0px;
+#blogPhoto1 { /* The code for all three blogPhoto id's are the same, so would've been better to combine into class */
+    margin-bottom: 0px; /* Redundant? */
     height: 80%;
     width: 80%;
 }
 
 #blogPhoto2 {
-    margin-bottom: 0px;
+    margin-bottom: 0px; /* Redundant? */
     height: 80%;
     width: 80%;
 }
 
 #blogPhoto3 {
-    margin-bottom: 0px;
+    margin-bottom: 0; /* Redundant? */
     height: 80%;
     width: 80%;
 }
 
 /* Sign Up to Newsletter */
-
-.signUp {
+.signUp { /* Unnecessary as could've been combined with styles.css */
     grid-area: sup;
     display: flex;
     flex-direction: column;
@@ -138,15 +131,15 @@
     grid-auto-rows: minmax(100px auto);
 }
 
-#image1 {
+#image1 { /* Unnecessary as could've been combined with styles.css */
     height: 200px;
     width: 300px;
-    padding-top: 0px;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    padding-top: 0;
+    margin-top: 30px; 
+    margin-bottom: 0;
 }
 
-#button1 {
+#button1 { /* Unnecessary as could've been combined with styles.css */
     margin-top: 15px;
     margin-bottom: 15px;
     padding-left: 20px;
@@ -155,12 +148,11 @@
 }
 
 /* Social Media Share Buttons */
-
 #share {
     text-align: center;
 }
 
-#twitter {
+#twitter { /* Would've been better to use logo class for the three links? */
     height: 50px;
     width: 50px;
 }
@@ -176,22 +168,21 @@
 }
 
 /* Footer */
-
-.div5 {
+.div5 { /* Unnecessary as could've been combined with styles.css */
     grid-area: ft;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("koiNobori.jpg");
+    background: url(../entireSite/koiNobori.jpg);
 }
 
-/* responsive tablet */
 
+/* responsive tablet */
 @media(min-width: 768px) {
-    
+
     .wrapper {
         grid-template-areas:
-    
+
         "hd hd hd hd  hd hd hd hd  hd hd hd hd"
         "nav nav nav nav  nav nav nav nav  nav nav nav nav"
         ". cd cd .  con con con con  con con con con"
@@ -201,59 +192,53 @@
     }
 
     /* Heading */
-    
     #header {
         font-size: 3.5em;
     }
 
     /* Navigation */
-
     .div2 {
         font-size: 1.2em;
         justify-content: center;
     }
 
     /* Author Card */
-
     .div3 {
         margin-top: 30px;
-        margin-left: 10%;
+        margin-left: 10%; /* Wider screen allows for a nicer margin on the side */
     }
 
     /* Content */
-
     .div4 {
-        margin-right: 10%;
+        margin-right: 10%; /* Wider screen allows for a nicer margin on the side */
     }
 
     /* Sign Up to Newsletter */
-    
     .signUp {
         padding-bottom: 20%;
-        margin-left: 10%;
+        margin-left: 10%; /* Inline with div3 */
     }
 }
+
 
 /* responsive desktop */
 @media(min-width: 1080px) {
 
     /* Navigation */
-    
     .div2 {
         font-size: 1.3em;
     }
 
     /* Author Card */
-
     .div3 {
         margin-top: 20%;
-        margin-left: 30%;
+        margin-left: 30%; /* Wider screen allows for a nicer margin on the side */
     }
 
     #authorName {
         font-size: 1.5em;
     }
-    
+
     #authorBio {
         font-size: 1.1em;
     }
@@ -263,36 +248,36 @@
     }
 
     /* Content */
-    
     .div4 {
         margin-top: 10%;
-        margin-right: 20%;
+        margin-right: 30%; /* Wider screen allows for a nicer margin on the side */
     }
-        
+
     #innerHead {
         font-size: 3em;
     }
-        
+
     #paraHead {
         font-size: 1.5em;
     }
-    
+
     .par {
         font-size: 1.2em;
     }
-        
+       
     /* Sign Up to Newsletter */
-    
-    .signUp {
+    .signUp { /* Unnecessary as could've been combined with styles.css */
         padding-bottom: 20%;
         margin-left: 20%;
     }
 }
 
-/* tiny screen width */
 
-@media(max-width: 600px) {
+/* tiny screen width */
+@media(max-width: 600px) { /* Smaller screen smart phones */
+
+    /* Header */
     h1 {
-        font-size: 2.5em;
+        font-size: 2.5em; /* Just wanted the webpage title to span the screen and not fold */
     }
 }
