@@ -1,0 +1,237 @@
+@import url(../design-system/design-system.css);
+
+/* responsive mobile */
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-areas:
+
+    "hd hd hd hd  hd hd hd hd  hd hd hd hd"
+    ". . . nav  nav nav nav nav  nav . . ."
+    ". . ar ar  ar ar ar ar  ar ar . ."
+    "con con con con  con con con con  con con con con"
+    "sup sup sup sup  sup sup sup sup  sup sup sup sup"
+    "ft ft ft ft  ft ft ft ft  ft ft ft ft"
+}
+
+/* Heading */
+.div1 {
+    grid-area: hd;
+    background-color: #3CB2D0;
+    display: grid;  /* Regardless of screen size I want the header center and spanning the whole top layer */
+    justify-items: center;
+    height: 10vh; /* Imagining the heading almost as logo itself, so decided to keep the height uniform */
+}
+
+/* Navigation */
+.div2 {
+    grid-area: nav;
+    background-color: #3CB2D0;
+    color:#fdefdb;
+    display: flex; /* Needed to create a little space as screen size changes */ 
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 7vh;
+}
+
+/* Latest Article Snippet Card */
+.div3 {
+    grid-area: ar;
+    display: flex; 
+    flex-wrap: wrap; /* Probably the incorrect choice as the card would be better to retain the same dimensions regardless of screen size */
+    justify-content: center;
+    border-radius: 0.3em;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    box-shadow: 1px 1px 1px #272b2a3f;
+    background: url(../webpage-master/koiNobori.jpg); /* Better to have simply colored the background here, but used the technique so I can remember the code */
+}
+
+#latest-post {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#latest-snippet {
+    text-align: left;
+    margin-top: 0;
+    padding-left: 20px;
+    font-size: 0.9em;
+}
+
+#food-photo {
+    margin-top: 3%;
+    height: 200px; /* Unnecessary code as this is in designSystem */
+    width: 300px; /* Unnecessary code as this is in designSystem */
+}
+
+#button {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Content */
+.div4 {
+    grid-area: con;
+    display: flex; /* Really happy with the way this works for all screen sizes */
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-auto-rows: minmax(100px auto); /* Not necessary here, but my understanding is this gives a minimum snippet and has no restrictions on length of rows */
+}
+
+#inner-head {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#para-head {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Sign Up to Newsletter */
+.sign-up {
+    grid-area: sup;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-auto-rows: minmax(100px auto); /* Not necessary here, but my understanding is this gives a minimum snippet and has no restrictions on length of rows */
+}
+
+#image1 {
+    height: 200px; /* Unnecessary code */
+    width: 300px; /* Unnecessary code */
+    padding-top: 0; /* Not sure why this is here */
+    margin-top: 30px;
+    margin-bottom: 0; /* Not sure why this is here */
+}
+
+#button1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 1px 1px 1px #272b2a3f;
+}
+
+/* Footer */
+.div5 {
+    grid-area: ft;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../webpage-master/koiNobori.jpg); /* Again, would be better in a real project to simply color-background */
+}
+
+
+/* responsive tablet */
+@media(min-width: 768px) {  /* iPad mini width */
+
+    .wrapper {
+        grid-template-areas:
+
+        "hd hd hd hd  hd hd hd hd  hd hd hd hd"
+        "nav nav nav nav  nav nav nav nav  nav nav nav nav"
+        ". ar ar .  con con con con  con con con con"
+        ". . . .  con con con con  con con con con"
+        ". sup sup .  con con con con  con con con con"
+        "ft ft ft ft  ft ft ft ft  ft ft ft ft"
+    }
+
+
+    /* Heading */
+    #heading {
+        font-size: 3.5em;
+    }
+
+    /* Navigation */
+    .div2 {
+        justify-content: center;
+        font-size: 1.2em;
+    }
+
+    /* Latest Article Snippet Card */
+    .div3 {
+        margin-top: 30px;
+        margin-left: 10%; /* Wider screen allows for a nicer margin on the side */
+    }
+    /* Content */
+
+    .div4 {
+        margin-right: 10%; /* Wider screen allows for a nicer margin on the side */
+    }
+    /* Sign Up to Newsletter */
+    .sign-up {
+        padding-bottom: 20%;
+        margin-left: 10%; /* Keeping inline with .div3 */
+    }
+}
+
+
+/* Responsive Laptop */
+@media(min-width: 1080px) {
+
+    /* Navigation */
+    .div2 {
+        font-size: 1.3em;
+    }
+
+    /* Latest Article Snippet Card */
+    .div3 {
+        margin-top: 20%;
+        margin-left: 30%;
+    }
+
+    #latest-post {
+        font-size: 1.5em;
+    }
+
+    #latest-snippet {
+        font-size: 1.1em;
+    }
+
+    /* Content */
+    .div4 {
+        margin-top: 10%;
+        margin-right: 20%;
+    }
+
+    #inner-head {
+        font-size: 3em;
+    }
+
+    #para-head {
+        font-size: 1.5em;
+    }
+
+    #par1 {
+        font-size: 1.2em;
+    }
+
+    #par2 {
+        font-size: 1.2em;
+    }
+
+    /* Sign Up to Newsletter */
+    .sign-up {
+        padding-bottom: 20%;
+        margin-left: 20%;
+        }
+}
+
+
+/* tiny screen width */
+@media(max-width: 600px) { /* Smaller screen smart phones */
+
+    /* Header */
+    h1 {
+        font-size: 2.5em; /* Just wanted the webpage title to span the screen and not fold */
+    }
+}
